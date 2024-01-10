@@ -1,6 +1,7 @@
 body { /* Johan */
   background-color: #424549;
   color: #7289da;
+  margin: 0;
 }
 
 header { /* Johan */
@@ -12,7 +13,7 @@ header { /* Johan */
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  grid-template-rows: 70px 70px auto 70px;
+  grid-template-rows: 70px 3.1em auto 70px; /* osäker om det kan vara em där i mellan /Markus */
   grid-template-areas: 
   "header"
   "nav"
@@ -22,6 +23,8 @@ header { /* Johan */
 
 nav{ /* Markus */
   grid-area: nav;
+  width: 100%;
+  height: 100%;
 }
 
 nav ul{ /* Markus */
