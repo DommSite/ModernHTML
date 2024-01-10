@@ -4,21 +4,49 @@ body { /* Johan */
   margin: 0;
 }
 
-header { /* Johan */
-  background-color: #282b30;
-  grid-area: header;
-}
-
 .wrapper{ /* Markus */
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  grid-template-rows: 70px 3.1em auto 70px; /* osäker om det kan vara em där i mellan /Markus */
+  grid-template-rows: 70px 3.1em auto 70px; /* osäker om det kan vara em där i mellan /Markus Det borde inte vara någa problem /johan*/
   grid-template-areas: 
   "header"
   "nav"
   "main"
   "footer"
+}
+
+header { /* Johan */
+  background-color: #282b30;
+  grid-area: header;
+}
+
+h1{ /*Johan*/
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 25%,
+    #ff1361 50%,
+    #fff800 75%,
+    #231557 100%
+  );
+ 
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip { /*Johan*/
+  to {
+    background-position: 200% center;
+  }
 }
 
 nav{ /* Markus */
@@ -57,5 +85,11 @@ nav a:hover{ /* Markus */
   border-radius: 10%;
   background-color:#333538;
 }
+
+main{
+
+}
+
+
 
 
