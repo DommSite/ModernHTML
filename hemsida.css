@@ -1,9 +1,58 @@
-body {
+body { /* Johan */
   background-color: #424549;
   color: #7289da;
 }
 
-header {
+header { /* Johan */
   background-color: #282b30;
   grid-area: header;
 }
+
+.wrapper{ /* Markus */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  grid-template-rows: 70px 70px auto 70px;
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "footer"
+}
+
+nav{ /* Markus */
+  grid-area: nav;
+}
+
+nav ul{ /* Markus */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 3.1em;
+  border: solid;
+}
+
+nav li{ /* Markus */
+  list-style-type: none;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+nav a{ /* Markus */
+  color: #7289da;
+  font-size: large;
+}
+
+a{ /* Markus */
+  text-decoration: none;
+}
+
+nav a:hover{ /* Markus */ 
+  border-style: solid;
+  font-size: 120%;
+  padding: 0.5em;
+  border-radius: 10%;
+  background-color:#333538;
+}
+
+
