@@ -55,13 +55,18 @@ nav{ /* Markus */
   height: 100%;
 }
 
-nav ul{ /* Markus */
+header nav ul{ /* Markus */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 3.1em;
   border: solid;
 }
-
+nav ul{ /* Johan */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 3.1em;
+  border: solid;
+}
 nav li{ /* Markus */
   list-style-type: none;
   text-align: center;
