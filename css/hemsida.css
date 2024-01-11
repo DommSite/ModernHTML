@@ -10,16 +10,122 @@ body { /* Johan */
   height: 100%;
   margin: 0 auto;
   grid-template-rows: 70px 3.1em auto 70px; /* osäker om det kan vara em där i mellan /Markus Det borde inte vara någa problem /johan*/
-  grid-template-areas: 
-  "header"
-  "nav"
-  "main"
-  "footer"
 }
+.container{/*Max-Lukas*/
+width: 100vw;
+height: 100vh;
+font-family: 'Quicksand' , sans-serif;
+font-weight: bold ;
+font-size: 20px;
+
+display: grid;
+
+
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 220px 100px 1fr 1fr 100px;
+
+
+gap: 10px;
+
+padding: 10px;
+box-sizing: border-box ;
+
+
+}
+.container div{/*Max-Lukas*/
+  padding: 10px;
+  border: 1px  solid black;
+}
+.header{/*Max-Lukas*/
+  grid-row-start:1 ;
+  grid-row-end:1 ;
+  grid-column-start: 1;
+  grid-column-end: 6;
+ 
+ 
+}
+
+.Lokal-Meny{/*Max-Lukas*/
+  grid-row-start:2 ;
+  grid-row-end:3 ;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  
+}
+
+.stora-rutan-med-lokal-meny-1{/*Max-Lukas*/
+  grid-row-start:3 ;
+  grid-row-end:6 ;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.stora-rutan-1{/*Max-Lukas*/
+  grid-row-start:2 ;
+  grid-row-end:6 ;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.lilla-ruta-med-lokal-meny-1{/*Max-Lukas*/
+  grid-row-start: 3 ;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end:6 ;
+}
+.lilla-ruta-1{/*Max-Lukas*/
+  grid-row-start: 2 ;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end:6 ;
+}
+.stora-rutan-med-lokal-meny-2{/*Max-Lukas*/
+ grid-row-start:3 ;
+  grid-row-end:6;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.stora-rutan-2{/*Max-Lukas*/
+  grid-row-start:2 ;
+   grid-row-end:6;
+   grid-column-start: 3;
+   grid-column-end: 5;
+ }
+
+
+
+  
+  
+
+.lilla-ruta-med-lokal-meny-2{/*Max-Lukas*/
+  grid-row-start:4 ;
+  grid-row-end:6 ;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+.lilla-ruta-2{/*Max-Lukas*/
+  grid-row-start: 4 ;
+  grid-row-end: 6;
+  grid-column-start: 5;
+  grid-column-end:6 ;
+}
+.footer{/*Max-Lukas*/
+  grid-row-start:6 ;
+  grid-row-end:7 ;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+
+
+
+
+
+
+
+
 
 header { /* Johan */
   background-color: #282b30;
-  grid-area: header;
+  
 }
 
 h1{ /*Johan*/
