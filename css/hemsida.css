@@ -10,40 +10,16 @@ body { /* Johan */
   height: 100%;
   margin: 0 auto;
   grid-template-rows: 70px 3.1em auto 70px; /* osäker om det kan vara em där i mellan /Markus Det borde inte vara någa problem /johan*/
+
+  
 }
-.container{/*Max-Lukas*/
-width: 100vw;
-height: 100vh;
-font-family: 'Quicksand' , sans-serif;
-font-weight: bold ;
-font-size: 20px;
 
-display: grid;
-
-
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 220px 100px 1fr 1fr 100px;
-
-
-gap: 10px;
-
-padding: 10px;
-box-sizing: border-box ;
-
-
-}
-.container div{/*Max-Lukas*/
+div{
   padding: 10px;
   border: 1px  solid black;
 }
-.header{/*Max-Lukas*/
-  grid-row-start:1 ;
-  grid-row-end:1 ;
-  grid-column-start: 1;
-  grid-column-end: 6;
- 
- 
-}
+
+
 
 .Lokal-Meny{/*Max-Lukas*/
   grid-row-start:2 ;
@@ -104,6 +80,10 @@ box-sizing: border-box ;
 
 header { /* Johan */
   background-color: #282b30;
+   grid-row-start:1 ;
+  grid-row-end:1 ;
+  grid-column-start: 1;
+  grid-column-end: 6;
   
 }
 
@@ -116,7 +96,11 @@ h1{ /*Johan*/
     #ff1361 50%,
     #fff800 75%,
     #462aa8 100%
+
+    
   );
+
+  margin-left: 20px;
  
   background-clip: border-box;
   background-size: 200% auto;
@@ -157,8 +141,8 @@ nav ul{ /* Johan */
 nav li{ /* Markus */
   list-style-type: none;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+ ;
 }
 
 nav a{ /* Markus */
@@ -198,8 +182,24 @@ nav a:hover{ /* Markus */
   transition: 0.5s ;
 }
 
-main{
+main{ /*max-lukas*/
+  width: 98vw;
+  height: 100vh;
+  font-family: 'Quicksand' , sans-serif;
+  font-weight: bold ;
+  font-size: 20px;
 
+  display: grid;
+
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 220px 100px auto auto 100px;
+
+
+  gap: 10px;
+
+  padding: 10px;
+  box-sizing: border-box ;
 }
 
 footer{ /* Markus */
