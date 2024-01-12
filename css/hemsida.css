@@ -65,29 +65,18 @@ box-sizing: border-box ;
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.lilla-ruta-med-lokal-meny-1{/*Max-Lukas*/
-  grid-row-start: 3 ;
-  grid-row-end: 4;
-  grid-column-start: 5;
-  grid-column-end:6 ;
-}
-.lilla-ruta-1{/*Max-Lukas*/
-  grid-row-start: 2 ;
-  grid-row-end: 4;
-  grid-column-start: 5;
-  grid-column-end:6 ;
-}
+
 .stora-rutan-med-lokal-meny-2{/*Max-Lukas*/
  grid-row-start:3 ;
   grid-row-end:6;
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 6;
 }
 .stora-rutan-2{/*Max-Lukas*/
   grid-row-start:2 ;
    grid-row-end:6;
    grid-column-start: 3;
-   grid-column-end: 5;
+   grid-column-end: 6;
  }
 
 
@@ -95,18 +84,8 @@ box-sizing: border-box ;
   
   
 
-.lilla-ruta-med-lokal-meny-2{/*Max-Lukas*/
-  grid-row-start:4 ;
-  grid-row-end:6 ;
-  grid-column-start: 5;
-  grid-column-end: 6;
-}
-.lilla-ruta-2{/*Max-Lukas*/
-  grid-row-start: 4 ;
-  grid-row-end: 6;
-  grid-column-start: 5;
-  grid-column-end:6 ;
-}
+
+
 .footer{/*Max-Lukas*/
   grid-row-start:6 ;
   grid-row-end:7 ;
