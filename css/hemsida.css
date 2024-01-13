@@ -134,6 +134,10 @@ main{
   margin-left: auto;
   margin-right: auto;
 }
+.bild img{
+  width: 1000px;
+  height: auto;
+}
 footer{ /* Markus */
   grid-area: footer;
   position: absolute;
