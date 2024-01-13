@@ -10,7 +10,7 @@ body { /* Johan */
   width: 100%;
   min-height: 100%;
   margin: 0 auto;
-  grid-template-rows: 70px 3.1em auto auto; /* osäker om det kan vara em där i mellan /Markus Det borde inte vara någa problem /johan*/
+  grid-template-rows: 70px 3.1em auto auto; 
   grid-template-areas: 
   "header"
   "nav"
@@ -104,8 +104,10 @@ nav a:hover{ /* Markus */
   transition: 0.5s ;
 }
 main{
+  grid-area: main;
   font-weight: bold;
   height: auto;
+  min-height: 66vh;
   font-size: 20px;
   gap: 10px;
   padding: 10px;
@@ -119,11 +121,13 @@ main{
 }
 .text{
   display: block;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .bild{
   display: block;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .bild img{
   width: 1000px;
@@ -138,10 +142,17 @@ footer{ /* Markus */
   font-size: 120%;
 }
 #huvudsidan main{
+  height: auto;
+  min-height: 66vh;
+  gap: 10px;
+  padding: 10px;
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; 
+  grid-template-areas: 
+  "text bild"
+  "text bild2";
 }
 #huvudsidan img{
   display: block;
