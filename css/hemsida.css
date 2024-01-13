@@ -105,7 +105,7 @@ nav a:hover{ /* Markus */
 }
 main{
   font-weight: bold;
-  height: 66vh;
+  height: auto;
   font-size: 20px;
   gap: 10px;
   padding: 10px;
