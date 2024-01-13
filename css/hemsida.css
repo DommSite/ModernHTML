@@ -122,11 +122,15 @@ main{
 }
 .text{
   display:block;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
 }
 .bild{
   display:block;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
 }
