@@ -2,7 +2,7 @@ body { /* Johan */
   background-color: #424549;
   color: #7289da;
   margin: 0;
-  min-height: 99.7vh;
+  min-height: 97vh;
   max-width: 100vw;
 }
 .wrapper{ /* Markus */
@@ -59,7 +59,7 @@ nav{ /* Markus */
 header nav ul{ /* Markus */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 3.1em;
+  height: 3.5em;
   border: solid;
 }
 nav ul{ /* Johan */
@@ -108,7 +108,8 @@ nav a:hover{ /* Markus */
   transition: 0.5s ;
 }
 main{
-  font-weight: bold ;
+  font-weight: bold;
+  height: 97vh;
   font-size: 20px;
   gap: 10px;
   padding: 10px;
@@ -119,6 +120,7 @@ main{
     "text bild"
     "text bild"
     "text bild";
+
 }
 .text{
   display: block;
@@ -135,10 +137,7 @@ main{
 footer{ /* Markus */
   grid-area: footer;
   text-align: center;
-  position: absolute;
-  bottom: 0;
   margin: 0;
-  width:87.1em;
   height: auto;
   border-style: solid;
   font-size: 120%;
@@ -150,3 +149,12 @@ footer{ /* Markus */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; 
 }
+
+#huvudsidan img{
+  width: 100%;
+}
+
+p ~ img{
+  padding-top: 10px;
+}
+
