@@ -149,3 +149,10 @@ footer{ /* Markus */
   border-style: solid;
   font-size: 120%;
 }
+
+#huvudsidan main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; 
+}
