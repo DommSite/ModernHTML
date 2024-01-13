@@ -122,13 +122,21 @@ main{
 }
 .text{
   display:block;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
 }
 .bild{
   display:block;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
+}
+.bild img{
+  width: 1000px;
+  height: auto;
 }
 footer{ /* Markus */
   grid-area: footer;
