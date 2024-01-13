@@ -17,13 +17,10 @@ body { /* Johan */
   "main"
   "footer"
 }
-
 header { /* Johan */
   background-color: #282b30;
   grid-area: header;
-
 }
-
 h1{ /*Johan*/
   margin: 10px;
   text-transform: uppercase;
@@ -35,7 +32,6 @@ h1{ /*Johan*/
     #fff800 75%,
     #462aa8 100%
   );
- 
   background-clip: border-box;
   background-size: 200% auto;
   color: #fff;
@@ -109,7 +105,7 @@ nav a:hover{ /* Markus */
 }
 main{
   font-weight: bold;
-  height: 97vh;
+  height: 66vh;
   font-size: 20px;
   gap: 10px;
   padding: 10px;
@@ -120,7 +116,6 @@ main{
     "text bild"
     "text bild"
     "text bild";
-
 }
 .text{
   display: block;
@@ -142,18 +137,18 @@ footer{ /* Markus */
   border-style: solid;
   font-size: 120%;
 }
-
 #huvudsidan main{
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; 
 }
-
 #huvudsidan img{
+  display: block;
+  margin: auto;
   width: 100%;
+  height: auto;
 }
-
 p ~ img{
   padding-top: 10px;
 }
