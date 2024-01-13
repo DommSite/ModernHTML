@@ -2,89 +2,26 @@ body { /* Johan */
   background-color: #424549;
   color: #7289da;
   margin: 0;
-  min-height: 100vh;
-}
+  min-height: 99.7vh;
+  max-width: 100vw;
 
+}
 .wrapper{ /* Markus */
   width: 100%;
   height: 100%;
   margin: 0 auto;
   grid-template-rows: 70px 3.1em auto 70px; /* osäker om det kan vara em där i mellan /Markus Det borde inte vara någa problem /johan*/
-
-  
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "footer"
 }
-
-div{
-  padding: 10px;
-  border: 1px  solid black;
-}
-
-
-
-.Lokal-Meny{/*Max-Lukas*/
-  grid-row-start:2 ;
-  grid-row-end:3 ;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  
-}
-
-.stora-rutan-med-lokal-meny-1{/*Max-Lukas*/
-  grid-row-start:3 ;
-  grid-row-end:6 ;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.stora-rutan-1{/*Max-Lukas*/
-  grid-row-start:2 ;
-  grid-row-end:6 ;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.stora-rutan-med-lokal-meny-2{/*Max-Lukas*/
- grid-row-start:3 ;
-  grid-row-end:6;
-  grid-column-start: 3;
-  grid-column-end: 6;
-}
-.stora-rutan-2{/*Max-Lukas*/
-  grid-row-start:2 ;
-   grid-row-end:6;
-   grid-column-start: 3;
-   grid-column-end: 6;
- }
-
-
-
-  
-  
-
-
-
-.footer{/*Max-Lukas*/
-  grid-row-start:6 ;
-  grid-row-end:7 ;
-  grid-column-start: 1;
-  grid-column-end: 6;
-}
-
-
-
-
-
-
-
-
-
 
 header { /* Johan */
   background-color: #282b30;
-   grid-row-start:1 ;
-  grid-row-end:1 ;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  
+  grid-area: header;
+
 }
 
 h1{ /*Johan*/
@@ -96,11 +33,7 @@ h1{ /*Johan*/
     #ff1361 50%,
     #fff800 75%,
     #462aa8 100%
-
-    
   );
-
-  margin-left: 20px;
  
   background-clip: border-box;
   background-size: 200% auto;
@@ -112,39 +45,33 @@ h1{ /*Johan*/
   animation: textclip 5s linear infinite;
   display: inline-block;
 }
-
 @keyframes textclip { /*Johan*/
   to {
     background-position: 200% center;
   }
 }
-
 nav{ /* Markus */
   grid-area: nav;
   width: 100%;
   height: 100%;
 }
-
 header nav ul{ /* Markus */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 3.1em;
   border: solid;
 }
-
 nav ul{ /* Johan */
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 3.1em;
 }
-
 nav li{ /* Markus */
   list-style-type: none;
   text-align: center;
-  margin-top: 20px;
- ;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-
 nav a{ /* Markus */
   color: #7289da;
   font-size: large;
@@ -153,11 +80,9 @@ nav a{ /* Markus */
   border-radius: 10%;
   transition-duration: 0.5s;
 }
-
 a{ /* Markus */
   text-decoration: none;
 }
-
 nav a:hover{ /* Markus */ 
   border-style: solid;
   font-size: 120%;
@@ -171,7 +96,6 @@ nav a:hover{ /* Markus */
     #fff 50%,
     #7289da 70%,
     #fff 100%
-
   );
   background-size: 200% auto;
   background-clip: text;
@@ -181,39 +105,39 @@ nav a:hover{ /* Markus */
   animation: textclip 5s linear infinite;
   transition: 0.5s ;
 }
-
-main{ /*max-lukas*/
-  width: 98vw;
-  height: 100vh;
+main{
   font-family: 'Quicksand' , sans-serif;
   font-weight: bold ;
   font-size: 20px;
-
-  display: grid;
-
-
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 220px 100px auto auto 100px;
-
-
   gap: 10px;
-
   padding: 10px;
   box-sizing: border-box ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:auto auto auto;
+  grid-template-areas: 
+    "text bild"
+    "text bild"
+    "text bild";
 }
-
+.text{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bild{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
 footer{ /* Markus */
   grid-area: footer;
   position: absolute;
   bottom: 0;
   text-align: center;
   margin: 0;
-  width: 100%;
+  width: 99.5%;
   height: 3.5em;
   border-style: solid;
   font-size: 120%;
 }
-
-
-
-
