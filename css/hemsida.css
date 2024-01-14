@@ -149,10 +149,8 @@ footer{ /* Markus */
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; 
   grid-template-areas: 
-  "text bild"
-  "text bild2";
+  "text bild";
 }
 #huvudsidan img{
   display: block;
