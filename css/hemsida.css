@@ -2,9 +2,10 @@ body { /* Johan */
   background-color: #424549;
   color: #7289da;
   margin: 0;
-  min-height: 97vh;
+  min-height: 100vh;
   max-width: 100vw;
 }
+
 .wrapper{ /* Markus */
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
@@ -17,10 +18,12 @@ body { /* Johan */
   "main"
   "footer"
 }
+
 header { /* Johan */
   background-color: #282b30;
   grid-area: header;
 }
+
 h1{ /*Johan*/
   margin: 10px;
   text-transform: uppercase;
@@ -42,34 +45,56 @@ h1{ /*Johan*/
   animation: textclip 5s linear infinite;
   display: inline-block;
 }
+
 @keyframes textclip { /*Johan*/
   to {
     background-position: 200% center;
   }
 }
+
 nav{ /* Markus */
   grid-area: nav;
   width: 100%;
   height: 100%;
 }
+
 header nav ul{ /* Markus */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 3.5em;
   border: solid;
 }
+
+header nav ul li:nth-child(1){
+  text-align: center;
+}
+
+header nav ul li:nth-child(2){
+  text-align: center;
+}
+
 nav ul{ /* Johan */
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 3.1em;
-  margin-top: -1px;
+  margin-top: -15px;
 }
+/*
+nav li:nth-child(1){
+  text-align: right;
+}
+
+nav li:nth-child(2){
+  text-align: left;
+}
+*/
 nav li{ /* Markus */
   list-style-type: none;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 nav a{ /* Markus */
   color: #7289da;
   font-size: large;
@@ -78,9 +103,11 @@ nav a{ /* Markus */
   border-radius: 10%;
   transition-duration: 0.5s;
 }
+
 a{ /* Markus */
   text-decoration: none;
 }
+
 nav a:hover{ /* Markus */ 
   border-style: solid;
   font-size: 120%;
@@ -103,44 +130,62 @@ nav a:hover{ /* Markus */
   animation: textclip 5s linear infinite;
   transition: 0.5s ;
 }
+
 main{
   grid-area: main;
   font-weight: bold;
   height: auto;
-  min-height: 66vh;
+  min-height: 70vh;
   font-size: 20px;
   gap: 10px;
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows:auto auto auto;
-  grid-template-areas: 
-    "text bild"
-    "text bild"
-    "text bild";
+  grid-template-rows:auto;
 }
+
+section{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section ~ img{
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+
+/*
 .text{
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .bild{
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .bild img{
   width: 1000px;
   height: auto;
 }
+*/
+
 footer{ /* Markus */
   grid-area: footer;
+  background-color: #282b30;
   text-align: center;
   margin: 0;
   height: auto;
   border-style: solid;
   font-size: 120%;
 }
+
 #huvudsidan main{
   height: auto;
   min-height: 66vh;
@@ -149,16 +194,21 @@ footer{ /* Markus */
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "text bild";
+  grid-template-rows: auto;
 }
+
 #huvudsidan img{
   display: block;
   margin: auto;
   width: 100%;
   height: auto;
 }
+
 p ~ img{
   padding-top: 10px;
 }
 
+#huvudsidan section ~ img{
+  width: 100%;
+  height: auto;
+}
