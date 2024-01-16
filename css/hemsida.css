@@ -142,9 +142,8 @@ main{
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows:auto;
+  grid-template-rows: auto;
 }
-
 
 #huvudsidan main{
   height: auto;
@@ -206,6 +205,12 @@ table, td, th{
   background-color: #282b30;
   text-align: center;
 }
+
+.section1_grundläggande_html{
+  padding-top: 40px;
+}
+
+
 /*
 .text{
   display: block;
