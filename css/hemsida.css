@@ -97,11 +97,12 @@ nav li{ /* Markus */
 
 nav a{ /* Markus */
   color: #7289da;
-  font-size: large;
+  font-size: 1.2em;
   border-style: solid;
   padding: 0.5em;
   border-radius: 10%;
   transition-duration: 0.5s;
+  background-color: #282b30;
 }
 
 a{ /* Markus */
@@ -136,12 +137,31 @@ main{
   font-weight: bold;
   height: auto;
   min-height: 70vh;
-  font-size: 20px;
+  font-size: 1.5em;
   gap: 10px;
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:auto;
+}
+
+
+#huvudsidan main{
+  height: auto;
+  min-height: 66vh;
+  gap: 10px;
+  padding: 10px;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#huvudsidan img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
 }
 
 section{
@@ -157,6 +177,35 @@ section ~ img{
   height: auto;
 }
 
+#huvudsidan section:nth-child(2){
+  padding-top: 25px;
+}
+
+p{
+  text-align: center;
+}
+
+#huvudsidan p ~ img{
+  padding-top: 10px;
+}
+
+caption{
+  padding: 5px;
+  text-align: center;
+}
+
+table{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+table, td, th{
+  border: 2px solid #7289da;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: #282b30;
+  text-align: center;
+}
 /*
 .text{
   display: block;
@@ -183,33 +232,7 @@ footer{ /* Markus */
   margin: 0;
   height: auto;
   border-style: solid;
-  font-size: 120%;
-}
-
-#huvudsidan main{
-  height: auto;
-  min-height: 66vh;
-  gap: 10px;
-  padding: 10px;
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-#huvudsidan img{
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
-
-#huvudsidan p ~ img{
-  padding-top: 10px;
-}
-
-#huvudsidan section:nth-child(2){
-  padding-top: 25px;
+  font-size: 1.2em;
 }
 
 .bild_om_html{ /*Kan nog fixas på annat sätt men valde att göra det med klass här för Emil SJ sa det*/
