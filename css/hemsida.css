@@ -170,6 +170,10 @@ section{
   margin-left: auto;
 }
 
+section > p{
+  font-size: 120%;
+}
+
 section ~ img{
   display: block;
   margin: auto;
@@ -237,3 +241,28 @@ footer{ /* Markus */
 .bild_om_html{ /*Kan nog fixas på annat sätt men valde att göra det med klass här för Emil SJ sa det*/
   width: 100%;
 }
+
+
+/* var för ett foto
+main{
+  font-size: 20px;
+}
+/*styling för en typ-selektor
+
+
+.bild{
+  color: #462aa8;
+}
+/*styling för en klass-selektor
+
+
+#specifiktext{
+  text-align: center;
+}
+/*Specifik styling för en id-selektor
+
+
+main section table caption{
+  background-color: #462aa8;
+}
+/*en väldigt specifik styling med bara typ-selektorer
