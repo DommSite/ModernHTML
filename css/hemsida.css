@@ -153,7 +153,7 @@ section{
 section ~ img{
   display: block;
   margin: auto;
-  width: 50%;
+  width: 20%;
   height: auto;
 }
 
@@ -210,4 +210,8 @@ footer{ /* Markus */
 
 #huvudsidan section:nth-child(2){
   padding-top: 25px;
+}
+
+.bild_om_html{ /*Kan nog fixas på annat sätt men valde att göra det med klass här för Emil SJ sa det*/
+  width: 100%;
 }
