@@ -87,28 +87,38 @@ nav li{ /* Markus */
   margin-bottom: 15px;
 }
 
-nav a{ /* Markus */
+nav a:link{ /* Markus */
   color: #7289da;
   font-size: 1.2em;
   border-style: solid;
   padding: 0.5em;
   border-radius: 10%;
   transition-duration: 0.5s;
-  background-color: #282b30;
-}
-
-a{ /* Markus */
+  background-color: #333a46;
   text-decoration: none;
 }
 
 a:link{
-  color: #fff800;
-}
-a:visited{
-  color:#ff1361;
+  color: #ff1361;
+  text-decoration: none;
 }
 
-a:hover{
+
+
+a:visited{
+  color: #795cb2;
+  text-decoration: underline;
+}
+
+nav a:visited{
+  color:#7289da;
+}
+
+nav a:hover, nav a:focus{ /* Markus */ 
+  border-style: solid;
+  font-size: 120%;
+  padding: 0.5em;
+  border-radius: 10%;
   background-color:#333538;
   background-image: linear-gradient(
     -225deg,
@@ -127,17 +137,33 @@ a:hover{
   transition: 0.5s ;
 }
 
-a:focus{
-  color: aqua;
+a:hover, a:focus{
+  background-color:#333538;
+  background-image: linear-gradient(
+    -225deg,
+    #fff 0%,
+    #7289da 20%,
+    #fff 50%,
+    #7289da 70%,
+    #fff 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  transition: 0.5s ;
 }
 
 a:active{
   color: blue;
 }
-nav a:link{
-  color: #7289da;
-}
 
+
+
+
+<<<<<<< Updated upstream
 nav a:hover{ /* Markus */ 
   border-style: solid;
   font-size: 120%;
@@ -160,6 +186,12 @@ nav a:hover{ /* Markus */
   animation: textclip 5s linear infinite;
   transition: 0.5s ;
 }
+=======
+
+
+
+
+>>>>>>> Stashed changes
 
 main{
   grid-area: main;
@@ -245,8 +277,8 @@ table, td, th{
   text-align: center;
 }
 
-.section1_grundläggande_html{
-  padding-top: 40px;
+.section1_i_grundläggande_html_och_Trendig_html_och_css{
+  padding-top: 30px;
 }
 
 .scrolling-text {
@@ -271,6 +303,6 @@ footer{ /* Markus */
   font-size: 1.2em;
 }
 
-.bild_om_html{ /*Kan nog fixas på annat sätt men valde att göra det med klass här för Emil SJ sa det*/
+section:nth-child(2) > img {
   width: 100%;
 }
