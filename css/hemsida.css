@@ -163,7 +163,6 @@ a:active{
 
 
 
-<<<<<<< Updated upstream
 nav a:hover{ /* Markus */ 
   border-style: solid;
   font-size: 120%;
@@ -186,12 +185,6 @@ nav a:hover{ /* Markus */
   animation: textclip 5s linear infinite;
   transition: 0.5s ;
 }
-=======
-
-
-
-
->>>>>>> Stashed changes
 
 main{
   grid-area: main;
