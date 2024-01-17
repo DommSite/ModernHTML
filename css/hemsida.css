@@ -180,6 +180,13 @@ section ~ img{
   height: auto;
 }
 
+section > p ~ img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
 #huvudsidan section:nth-child(2){
   padding-top: 25px;
 }
@@ -224,26 +231,6 @@ table, td, th{
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
-
-
-/*
-.text{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.bild{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.bild img{
-  width: 1000px;
-  height: auto;
-}
-*/
 
 footer{ /* Markus */
   grid-area: footer;
