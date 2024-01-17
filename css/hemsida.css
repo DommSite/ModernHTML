@@ -245,8 +245,8 @@ table, td, th{
   text-align: center;
 }
 
-.section1_grundläggande_html{
-  padding-top: 40px;
+.section1_i_grundläggande_html_och_Trendig_html_och_css{
+  padding-top: 30px;
 }
 
 .scrolling-text {
@@ -271,6 +271,6 @@ footer{ /* Markus */
   font-size: 1.2em;
 }
 
-.bild_om_html{ /*Kan nog fixas på annat sätt men valde att göra det med klass här för Emil SJ sa det*/
+section:nth-child(2) >img { /*Kan nog fixas på annat sätt men valde att göra det med klass här för Emil SJ sa det*/
   width: 100%;
 }
