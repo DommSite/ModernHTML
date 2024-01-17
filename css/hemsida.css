@@ -278,7 +278,6 @@ table, td, th{
   white-space: nowrap;
   overflow: hidden;
   animation: scroll 5s linear infinite;
-  
 }
 
 @keyframes scroll {
@@ -297,5 +296,5 @@ footer{ /* Markus */
 }
 
 section:nth-child(2) > img {
-  width: 100%;
+  width: 35%;
 }
