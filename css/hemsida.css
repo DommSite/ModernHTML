@@ -163,7 +163,7 @@ nav a:hover{ /* Markus */
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
+  -webkit-text-fill-color: transparent;
   animation: textclip 5s linear infinite;
   transition: 0.5s ;
 }
@@ -278,6 +278,6 @@ footer{ /* Markus */
   font-size: 1.2em;
 }
 
-section:nth-child(2) >img { /*Kan nog fixas på annat sätt men valde att göra det med klass här för Emil SJ sa det*/
+section:nth-child(2) > img {
   width: 100%;
 }
