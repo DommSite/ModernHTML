@@ -87,28 +87,23 @@ nav li{ /* Markus */
   margin-bottom: 15px;
 }
 
-nav a{ /* Markus */
-  color: #7289da;
-  font-size: 1.2em;
-  border-style: solid;
-  padding: 0.5em;
-  border-radius: 10%;
-  transition-duration: 0.5s;
-  background-color: #282b30;
-}
+
 
 a{ /* Markus */
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 a:link{
-  color: #fff800;
-}
-a:visited{
-  color:#ff1361;
+  color: #ff1361;
+  text-decoration: none;
 }
 
-a:hover{
+a:visited{
+  color: #795cb2;
+  text-decoration: underline;
+}
+
+a:hover, a:focus{
   background-color:#333538;
   background-image: linear-gradient(
     -225deg,
@@ -127,15 +122,27 @@ a:hover{
   transition: 0.5s ;
 }
 
-a:focus{
-  color: aqua;
-}
-
 a:active{
   color: blue;
 }
+
+nav a{ /* Markus */
+  color: #7289da;
+  font-size: 1.2em;
+  border-style: solid;
+  padding: 0.5em;
+  border-radius: 10%;
+  transition-duration: 0.5s;
+  background-color: #333a46;
+  text-decoration: none;
+}
+
 nav a:link{
   color: #7289da;
+}
+
+nav a:visited{
+  background-color: #333942;
 }
 
 nav a:hover{ /* Markus */ 
@@ -156,7 +163,7 @@ nav a:hover{ /* Markus */
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
   animation: textclip 5s linear infinite;
   transition: 0.5s ;
 }
