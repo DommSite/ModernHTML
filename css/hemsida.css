@@ -136,7 +136,6 @@ main{ /* Johan */ /* typselektor, påverkar allt inom main */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  overflow-x: hidden; /* tar bort den horizontala scrollbaren som dyker upp när vi visar scrollande text */
 }
 
 img{ /* Markus och Johan */ /* typ-selektor, påverkar alla img */
