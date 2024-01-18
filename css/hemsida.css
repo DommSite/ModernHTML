@@ -1,4 +1,4 @@
-body { /* Johan */
+body { /* Johan */ /* */
   background-color: #424549;
   color: #7289da;
   margin: 0;
@@ -199,7 +199,7 @@ main{
   grid-template-rows: auto;
 }
 
-#huvudsidan main{
+#huvudsidan main{ /* Markus och Johan */ 
   height: auto;
   min-height: 66vh;
   gap: 10px;
@@ -210,7 +210,7 @@ main{
   grid-template-rows: auto;
 }
 
-#huvudsidan img{
+#huvudsidan img{ /* Markus och Johan */ 
   display: block;
   margin: auto;
   width: 100%;
@@ -227,30 +227,27 @@ section > p{
   font-size: 120%;
 }
 
-section ~ img{
+section + img{ /* Markus och Johan*/ /*syskonselektor, ändrar storleken på en bild som ligger direk efter en sektion*/
   display: block;
   margin: auto;
   width: 20%;
   height: auto;
 }
 
-section > p ~ img{
+#huvudsidan section > p + img{ /* Markus och Johan*/ /* idselektor och syskonslektor, ändrar bilder som ligger på huvudsidan, i en sektion och direkt efter ett p element */
   display: block;
   margin: auto;
   width: 100%;
   height: auto;
+  padding-top: 10px;
 }
 
-#huvudsidan section:nth-child(2){
+#huvudsidan section:nth-child(2){ /* Markus */ /* idselektor och barnselektor, flyttar bara bilder som är i andra sectionen. */
   padding-top: 25px;
 }
 
 p{
   text-align: center;
-}
-
-#huvudsidan p ~ img{
-  padding-top: 10px;
 }
 
 caption{
@@ -270,7 +267,7 @@ table, td, th{
   text-align: center;
 }
 
-.section1_i_grundläggande_html_och_Trendig_html_och_css{
+.section1_i_grundläggande_html_och_Trendig_html_och_css{ /* Markus */ /* klass selektor, använde för att flytta två bilder lite */  
   padding-top: 30px;
 }
 
@@ -285,7 +282,7 @@ table, td, th{
   100% { transform: translateX(-100%); }
 }
 
-footer{ /* Markus */
+footer{ /* Markus */ /* typselektor */ 
   grid-area: footer;
   background-color: #282b30;
   text-align: center;
@@ -295,6 +292,6 @@ footer{ /* Markus */
   font-size: 1.2em;
 }
 
-section:nth-child(2) > img {
+section:nth-child(2) > img { /* Markus */ /* Barnselektor och ">" gör så det effekterar bara bilder som ligger andra sektionerna, hade för att ändra storleken på en bild. */ 
   width: 100%;
 }
