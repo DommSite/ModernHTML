@@ -58,51 +58,51 @@ nav{ /* Markus */ /*typselektor */
 }
 
 header > nav > ul{ /* Markus */ /* ">" gör så det effekterar bara ul som ligger i nav som ligger i header. */ 
-  display: grid; /* visar var i grid-template-areas inehållet ska vara, detta fall griden. */
-  grid-template-columns: 1fr 1fr 1fr; /**/
-  height: 3.5em;
-  border: solid;
+  display: grid; /*skapar ett nytt grid system för innehållet*/
+  grid-template-columns: 1fr 1fr 1fr; /*gör så att griddet är uppdelad i 3 kolumner*/
+  height: 3.5em; /*Sätter höjden på gridden */
+  border: solid; /*gör så att innehållet har en ram som är solid*/
 }
 
-nav ul{ /* Johan */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 3.1em;
-  margin-top: -15px;
+nav ul{ /* Johan */ /* påverkar alla nav ul som inte har högre specificitet */
+  display: grid; /*gör ett eget grid i nav ul*/
+  grid-template-columns: 1fr 1fr; /* delar upp gridden i 2 kolumner */
+  height: 3.1em; /* sätter höjden på innehållet*/
+  margin-top: -15px; /* flyttar upp gridden 15px så att den är närmare header nav ul */
 }
 
-nav li{ /* Markus */
-  list-style-type: none;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+nav li{ /* Markus */ /* bestämmer hur listelementen ska se ut */
+  list-style-type: none; /* tar bort dekorationen på listan så som punkterna */
+  text-align: center; /* centrerar texten */
+  margin-top: 15px; /* flyttar ner listelementen så det ser bättre ut */
+  margin-bottom: 15px; /* flyttar upp listelementen så det ser bättre ut */
 }
 
-nav a:link{ /* Markus gjorde innehållet men Johan ändrade det till Love Focus Hate*/
+nav a:link{ /* Markus gjorde innehållet men Johan ändrade det till Love Focus Hate*/ /* :link för alla a taggar i nav, används för det måstes */
   color: rgb(114,137,218);
-  font-size: 1.2em;
+  font-size: 1.2em; /* sätter storleken till texten till 1.2 gånger så stor som enhetens standard storlek på text */ 
   border-style: solid;
-  padding: 0.5em;
-  border-radius: 10%;
-  transition-duration: 0.5s;
+  padding: 0.5em; /* lägger ett mellanrum mellan texten och ramen */
+  border-radius: 10%; /* rundar av hörnen på ramerna */
+  transition-duration: 0.5s; /* gör att animationen blir mjukare och inte lika skarp */
   background-color: rgb(51,58,70);
-  text-decoration: none;
+  text-decoration: none; /* Tar bort understräck från länkar och sånt */
 }
 
-a:link{/* Johan */
+a:link{/* Johan */ /* påverkar alla a taggar med länkar*/
   color: rgb(255,19,97);
   text-decoration: none;
 }
 
-a:visited{/* Johan */
+a:visited{/* Johan */ /* ändrar länkar när man har besökt dem*/
   color: rgb(121,92,178);
 }
 
-nav a:visited{/* Johan */
+nav a:visited{/* Johan */ /* ändrar länkar i naven om man har besökt dem */
   color:rgb(114,137,218);
 }
 
-nav a:hover, nav a:focus{ /* Markus gjorde innehållet för hover men johan la till focus för att de hade samma innehåll*/ 
+a:hover, a:focus{/* Johan */ /* påverkar alla ataggar med :hover och :focus så att de blir finfint */
   background-color:#333538;
   background-image: linear-gradient(
     -225deg,
@@ -118,130 +118,83 @@ nav a:hover, nav a:focus{ /* Markus gjorde innehållet för hover men johan la t
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear infinite;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
 
-a:hover, a:focus{/* Johan */
-  background-color:#333538;
-  background-image: linear-gradient(
-    -225deg,
-    rgb(255,255,255) 0%,
-    rgb(114,137,218) 20%,
-    rgb(255,255,255) 50%,
-    rgb(114,137,218) 70%,
-    rgb(255,255,255) 100%
-  );
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 5s linear infinite;
-  transition: 0.5s ;
-}
-
-a:active{/* Johan */
+a:active{/* Johan */ /* påverkar alla a taggar som aktivt blir berörda */
   color: inherit;
 }
 
-main{
-  grid-area: main;
-  font-weight: bold;
-  height: auto;
-  min-height: 70vh;
-  font-size: 1.5em;
-  gap: 10px;
+main{ /* Johan */ /* typselektor, påverkar allt inom main */ 
+  grid-area: main; /* visar var i grid-template-areas inehållet ska vara, detta fall main.*/
+  font-weight: bold; /* ändrar textens typsnitt till tjockstil */
+  height: auto; /* gör att höjden automatiskt blir rätt storlek när innehållet blir större */
+  min-height: 70vh; /* sätter minimum höjden av sidan till 70% av användarens skärm */
+  font-size: 1.5em; 
+  gap: 10px; /* sätter ett mellanrum för att få det mer uppdelat*/
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  overflow-x: hidden; /* tar bort den horizontala scrollbaren som dyker upp när vi visar scrollande text */
 }
 
-#huvudsidan main{ /* Markus och Johan */ 
-  height: auto;
-  min-height: 66vh;
-  gap: 10px;
-  padding: 10px;
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-#huvudsidan img{ /* Markus och Johan */ 
-  display: block;
-  margin: auto;
+img{ /* Markus och Johan */ /* typ-selektor, påverkar alla img */
+  display: block; /* Gör att innehållet får ett block som det är innuti som är lättare att arbeta med */
+  margin: auto; /* sätter automatiskt jämna avstånd till alla sidor */
   width: 100%;
   height: auto;
 }
 
-section{/* Johan */
+section{ /* Johan */ /* typ-selektor, påverkar alla sections på alla sidor */
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: auto; /* gör automatiskt avstånd till höger */
+  margin-left: auto; /* gör automatiskt avstånd till vänster */
 }
 
-section > p{/* Johan */
-  font-size: 120%;
+section > p{ /* Johan */ /* påverkar alla p taggar som är i en section,  */
+  font-size: 120%; /* Gör texten 20% större än orginalt */
 }
 
-section + img{ /* Markus och Johan*/ /*syskonselektor, ändrar storleken på en bild som ligger direk efter en sektion*/
+section + img{ /* Markus och Johan*/ /*syskonselektor, ändrar storleken på en bild som ligger direkt efter en sektion öppning*/
   display: block;
   margin: auto;
   width: 20%;
   height: auto;
 }
 
-#huvudsidan section > p + img{ /* Markus och Johan*/ /* idselektor och syskonslektor, ändrar bilder som ligger på huvudsidan, i en sektion och direkt efter ett p element */
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: auto;
-  padding-top: 10px;
-}
-
-#huvudsidan section:nth-child(2){ /* Markus */ /* idselektor och barnselektor, flyttar bara bilder som är i andra sectionen. */
-  padding-top: 25px;
-}
-
-p{/* Johan */
+p{ /* Johan */ /* typ-selektor, påverkar alla p taggar */
   text-align: center;
 }
 
-caption{/* Johan */
+caption{ /* Johan */ /* typ-selektor, påverkar alla captions över tabellerna */
   padding: 5px;
   text-align: center;
 }
 
-table{/* Johan */
+table{ /* Johan */ /* typ-selektor, påverkar tabeller */
   margin-bottom: 50px;
 }
 
-table, td, th{
+table, td, th{ /* Johan */ /* grupp-selektor av typ-selektorer, påverkar alla tabeller, td och th*/
   border: 2px solid rgb(114,137,218);
-  border-collapse: collapse;
+  border-collapse: collapse; /* Gör att alla borders runt innehåller kollapsar ihop till gemensamma linjer ifall de är brevid varandra */
   padding: 5px;
   background-color: rgb(40,43,48);
   text-align: center;
 }
 
-.section1_i_grundläggande_html_och_Trendig_html_och_css{ /* Markus */ /* klass selektor, använde för att flytta två bilder lite */  
-  padding-top: 30px;
+.scrolling-text { /* max-lukas */ /* klass-selektor, en klass för att visa ett exempel på hur css animationer ser ut */
+  animation: scroll 5s linear infinite; /* bestämmer tiden som det tar att göra animationen */
+  font-size: 120%;
 }
 
-.scrolling-text {
-  white-space: nowrap;
-  overflow: hidden;
-  animation: scroll 5s linear infinite;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+@keyframes scroll { /* max-lukas */
+  20% { transform: translateX(90%); } /* första procenten bestämmer hastigheten på returen och den andra procenten bestämmer vart den ska röra sig relativt med sin plats i gridden */
 }
 
 footer{ /* Markus */ /* typselektor */ 
-  grid-area: footer;
+  grid-area: footer; /* visar var i grid-template-areas inehållet ska vara, detta fall footer.*/
   background-color: rgb(40,43,48);
   text-align: center;
   margin: 0;
