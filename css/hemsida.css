@@ -1,33 +1,33 @@
-body { /* Johan */ /* */
-  background-color: rgb(66,69,73);
-  color: rgb(114,137,218);
-  margin: 0;
-  min-height: 100vh;
-  max-width: 100vw;
+body { /* Johan */ /*typselektor, som innehåller allt i body*/ /**/
+  background-color: rgb(66,69,73); /* ändrar bakrundfärgen */
+  color: rgb(114,137,218); /* ändrar färger */
+  margin: 0; /* gör så att allt rör sig till kanterna och inte har några mellanrum*/
+  min-height: 100vh; /* gör så att det är minst en skärms höjd även om det är mindre innehåll */
+  max-width: 100vw; /* gör så att sidasn inte blir bredare än vad skrämen är.*/
 }
 
-.wrapper{ /* Markus */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
-  min-height: 100%;
-  margin: 0 auto;
-  grid-template-rows: 70px 3.1em auto auto; 
-  grid-template-areas: 
-  "header"
+.wrapper{ /* Markus */ /* klassselektor, omfamnar allt innehåll på sidan */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*  Visar prioritering på typsnitt, så alltid något kan användas */
+  width: 100%; /* 100% av bodys bredd*/
+  min-height: 100%; /* minst 100% av bodys höjd */
+  margin: 0;
+  grid-template-rows: 70px 3.1em auto auto; /* gör så att skärmen delas i fyra rader, de två första har en bestämd strolek medans de andra två fyller ut beronde på hur mycket som skriv in.*/
+  grid-template-areas: /* markerar de fyra raderna så man kan placera innehållet på rätt plats */
+  "header" 
   "nav"
   "main"
   "footer"
 }
 
-header { /* Johan */
+header { /* Johan */ /* typselektor, ändrar allt i header. */
   background-color: rgb(40,43,48);
-  grid-area: header;
+  grid-area: header; /* visar var i grid-template-areas inehållet ska vara, detta fall headern. */
 }
 
-h1{ /*Johan gjorde denna för h1 som sedan återanvändes på andra ställen med lite variation*/
-  margin: 10px;
-  text-transform: uppercase;
-  background-image: linear-gradient(
+h1{ /*Johan gjorde denna för h1 som sedan återanvändes på andra ställen med lite variation*/ /* typselektor, ändrar allt i h1. */
+  margin: 10px; /* denna har annan margin, så den inte ligger precis längs med vänsetr kanten. */
+  text-transform: uppercase; /* gör så att texten är i storbokstäver. */
+  background-image: linear-gradient( /* gör en bakgrunds bild med dessa färger som är roterade på de grandantal so manges och färgerna täcker den procent som anges. */
     -225deg,
     rgb(70,42,168) 0%,
     rgb(96,25,172) 25%,
@@ -35,32 +35,31 @@ h1{ /*Johan gjorde denna för h1 som sedan återanvändes på andra ställen med
     rgb(255,248,0) 75%,
     rgb(70,42,168) 100%
   );
-  background-clip: border-box;
-  background-size: 200% auto;
+  background-clip: border-box; /* sammarbetar med background-image och skapar en låda under innehålet den är på. */
+  background-size: 200% auto; /* bilden blir 200% större och repeteras automatiskt. */
   color: rgb(255,255,255);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 5s linear infinite;
-  display: inline-block;
+  background-clip: text; /* effekterar text inehållet. */
+  -webkit-text-fill-color: transparent; /* gör så att texten är genomskinlig. */
+  -webkit-background-clip: text; /* gör så att background-image syns under texten bara. */
+  animation: textclip 5s linear infinite; /* */
+  display: inline-block; /* */
 }
 
 @keyframes textclip { /*Johan, tittade på en förklaring och denna behövs för att den tidigare animationen skulle fungera*/
   to {
-    background-position: 200% center;
+    background-position: 200% center; /* gjort */
   }
 }
 
-nav{ /* Markus */
-  grid-area: nav;
-  width: 100%;
-  height: 100%;
+nav{ /* Markus */ /*typselektor */
+  grid-area: nav; /* visar var i grid-template-areas inehållet ska vara, detta fall nav.*/ 
+  width: 100%; /* 100% av navens bredd */
+  height: 100%; /* 100% av navens höjd */
 }
 
-header nav ul{ /* Markus */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+header > nav > ul{ /* Markus */ /* ">" gör så det effekterar bara ul som ligger i nav som ligger i header. */ 
+  display: grid; /* visar var i grid-template-areas inehållet ska vara, detta fall griden. */
+  grid-template-columns: 1fr 1fr 1fr; /**/
   height: 3.5em;
   border: solid;
 }
@@ -104,10 +103,6 @@ nav a:visited{/* Johan */
 }
 
 nav a:hover, nav a:focus{ /* Markus gjorde innehållet för hover men johan la till focus för att de hade samma innehåll*/ 
-  border-style: solid;
-  font-size: 120%;
-  padding: 0.5em;
-  border-radius: 10%;
   background-color:#333538;
   background-image: linear-gradient(
     -225deg,
@@ -255,6 +250,6 @@ footer{ /* Markus */ /* typselektor */
   font-size: 1.2em;
 }
 
-section:nth-child(2) > img { /* Markus */ /* Barnselektor och ">" gör så det effekterar bara bilder som ligger andra sektionerna, hade för att ändra storleken på en bild. */ 
+section:nth-child(2) > img { /* Markus */ /* Barnselektor och ">" gör så det effekterar bara bilder som ligger i andra sektionerna, hade för att ändra storleken på en bild. */ 
   width: 100%;
 }
