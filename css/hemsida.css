@@ -103,8 +103,6 @@ a:link{
   text-decoration: none;
 }
 
-
-
 a:visited{
   color: #795cb2;
   text-decoration: underline;
@@ -159,9 +157,6 @@ a:hover, a:focus{
 a:active{
   color: blue;
 }
-
-
-
 
 nav a:hover{ /* Markus */ 
   border-style: solid;
