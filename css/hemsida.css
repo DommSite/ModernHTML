@@ -183,7 +183,7 @@ table, td, th{ /* Johan */ /* grupp-selektor av typ-selektorer, påverkar alla t
   text-align: center;
 }
 
-.scrolling-text { /* max-lukas */ /* klass-selektor, en klass för att visa ett exempel på hur css animationer ser ut */
+#scrolling-text { /* max-lukas */ /* klass-selektor, en klass för att visa ett exempel på hur css animationer ser ut */
   animation: scroll 5s linear infinite; /* bestämmer tiden som det tar att göra animationen */
   font-size: 120%;
 }
